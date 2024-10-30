@@ -73,12 +73,6 @@ export function Portfolio() {
 
   const creations = [
     {
-      name: "Bellycop.com",
-      description: "Belly Cop helps you move more by whatsapping your friends if you don't. Connect with Apple Health or Google Fit, set your health goal and we'll start policing.",
-      url: "https://bellycop.com",
-      status: "Private Beta"
-    },
-    {
       name: "Mahalo.so",
       description: "Ambassador Engine for Non-Profits",
       url: "https://mahalo.so/",
@@ -139,7 +133,7 @@ export function Portfolio() {
       </div>
 
       <div>
-        <h2 className="font-semibold text-xl mb-4">fun creations</h2>
+        <h2 className="font-semibold text-xl mb-4">creations</h2>
         <div className="grid grid-cols-1 gap-4">
           {creations.map((creation) => (
             <a
