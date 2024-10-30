@@ -1,19 +1,23 @@
 import { BlogPosts } from 'app/components/posts'
+import { Portfolio } from 'app/components/portfolio'
 
 export default function Page() {
   return (
     <section>
-      <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
-      </h1>
+      <div className="flex items-center mb-8">
+        <div className="w-5 h-5 bg-orange-200 rounded-full mr-2" aria-label="Happy Collective logo" />
+        <h1 className=" text-2xl font-semibold tracking-tighter">
+          welcome to the collective
+        </h1>
+      </div>
       <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+        {`our mission is to create, invest and promote human communities in the age of rapid technological progress.`}
       </p>
       <div className="my-8">
+        <Portfolio />
+      </div>
+      <div className="my-8 hidden">
+        <h2 className="font-semibold text-xl mb-4">Latest Posts</h2>
         <BlogPosts />
       </div>
     </section>

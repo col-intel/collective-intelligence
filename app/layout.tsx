@@ -11,17 +11,40 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Next.js Portfolio Starter',
-    template: '%s | Next.js Portfolio Starter',
+    default: 'happy collective - powered by humans',
+    template: '%s | happy collective - powered by humans',
   },
-  description: 'This is my portfolio.',
+  description: 'Our mission is to create, invest and promote human communities in the age of rapid technological progress.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png' },
+    ],
+  },
+  manifest: '/site.webmanifest',
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: 'happy collective - powered by humans',
+    description: 'Our mission is to create, invest and promote human communities in the age of rapid technological progress.',
     url: baseUrl,
-    siteName: 'My Portfolio',
+    siteName: 'happy collective - powered by humans',
     locale: 'en_US',
     type: 'website',
+    images: [
+      {
+        url: `${baseUrl}/og-image.png`,
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'happy collective - powered by humans',
+    description: 'Our mission is to create, invest and promote human communities in the age of rapid technological progress.',
+    images: [`${baseUrl}/og-image.png`],
   },
   robots: {
     index: true,
@@ -52,6 +75,31 @@ export default function RootLayout({
         GeistMono.variable
       )}
     >
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <meta name="theme-color" content="#ffffff" />
+        <meta name="background-color" content="#ffffff" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="happy collective" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="/icon.png" />
+        <meta name="msapplication-config" content="/browserconfig.xml" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="happy collective" />
+        <meta name="twitter:description" content="Our mission is to create, invest and promote human communities in the age of rapid technological progress." />
+        <meta name="twitter:image" content="/og-image.png" />
+        <meta name="og:title" content="happy collective" />
+        <meta name="og:description" content="Our mission is to create, invest and promote human communities in the age of rapid technological progress." />
+        <meta name="og:url" content={baseUrl} />
+        <meta name="og:site_name" content="happy collective" />
+        <meta name="og:image" content="/og-image.png" />
+        <meta name="og:image:width" content="1200" />
+        <meta name="og:image:height" content="630" />
+      </head>
       <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
