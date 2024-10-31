@@ -25,7 +25,7 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/company/happycollective/"
+            href="https://www.linkedin.com/company/collective-ci/"
           >
             <ArrowIcon />
             <p className="ml-2 h-7">linkedin</p>
@@ -33,7 +33,7 @@ export default function Footer() {
         </li>
       </ul>
       <p className="mt-8 text-neutral-600 dark:text-neutral-300">
-        © {new Date().getFullYear()} happy collective. all rights reserved.
+        © {new Date().getFullYear()} collective intelligence. all rights reserved.
       </p>
     </footer>
   )

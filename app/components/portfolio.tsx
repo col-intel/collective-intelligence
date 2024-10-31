@@ -71,15 +71,6 @@ export function Portfolio() {
     { name: "Animas Portugal", url: "https://animasportugal.org/", year: 2024 }
   ]
 
-  const creations = [
-    {
-      name: "Mahalo.so",
-      description: "Ambassador Engine for Non-Profits",
-      url: "https://mahalo.so/",
-      status: "Sunset"
-    }
-  ]
-
   return (
     <div className="space-y-8">
       <div>
@@ -113,7 +104,7 @@ export function Portfolio() {
       </div>
 
       <div>
-        <h2 className="font-semibold text-xl mb-4">non-profit advisory</h2>
+        <h2 className="font-semibold text-xl mb-4">fundraising advisory</h2>
         <div className="flex flex-wrap gap-4">
           {nonProfits.map((org) => (
             <a
@@ -132,30 +123,7 @@ export function Portfolio() {
         </div>
       </div>
 
-      <div>
-        <h2 className="font-semibold text-xl mb-4">creations</h2>
-        <div className="grid grid-cols-1 gap-4">
-          {creations.map((creation) => (
-            <a
-              key={creation.name}
-              href={creation.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
-            >
-              <div className="flex justify-between items-start">
-                <h3 className="font-medium">{creation.name}</h3>
-                <span className="text-sm text-neutral-600 dark:text-neutral-400">
-                  {creation.status}
-                </span>
-              </div>
-              <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
-                {creation.description}
-              </p>
-            </a>
-          ))}
-        </div>
-      </div>
+    
     </div>
   )
 }
