@@ -11,7 +11,7 @@ export default function Page() {
         </h1>
       </div>
       <p className="mb-4">
-        {`Collective Intelligence is dedicated to decoding and anticipating human demand. Our mission is to understand the complex patterns of human behavior and translate this knowledge into actionable insights that empower businesses. Through rigorous research, we uncover emerging needs and trends, positioning our partners to stay ahead in an ever-evolving market.`}
+        {`Collective Intelligence is dedicated to decoding and anticipating human demand. Our mission is to understand the complex patterns of human behavior and translate this knowledge into actionable insights that empower organizations. Through rigorous research, we uncover emerging needs and trends, positioning our partners to stay ahead in an ever-evolving market.`}
       </p>
       <p className="mb-4">
         {`In addition to research, we offer strategic investment and advisory services, focusing on organizations in the fundraising and data sectors. With a commitment to impactful partnerships, we support organizations in scaling sustainably and making data-driven decisions to maximize their market potential.`}
