@@ -74,7 +74,7 @@ export function Portfolio() {
   return (
     <div className="space-y-8">
       <div>
-        <h2 className="font-semibold text-xl mb-4">ventures</h2>
+        <h2 className="font-semibold text-xl mb-4">ventures & advisory</h2>
         <div className="grid grid-cols-1 gap-4">
           {projects.map((project) => (
             <a
@@ -104,7 +104,7 @@ export function Portfolio() {
       </div>
 
       <div>
-        <h2 className="font-semibold text-xl mb-4">fundraising advisory</h2>
+        <h2 className="font-semibold text-xl mb-4">non-profits we worked with</h2>
         <div className="flex flex-wrap gap-4">
           {nonProfits.map((org) => (
             <a

@@ -11,10 +11,10 @@ import { baseUrl } from './sitemap'
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'collective intelligence - human demand research and advisory',
-    template: '%s | collective intelligence - human demand research and advisory',
+    default: 'collective intelligence - grow together',
+    template: '%s | collective intelligence - grow together',
   },
-  description: 'Our mission is to decode and anticipate human demand. We uncover emerging needs and trends, positioning our partners to stay ahead in an ever-evolving market.',
+  description: 'Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships.',
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -26,10 +26,10 @@ export const metadata: Metadata = {
   },
   manifest: '/site.webmanifest',
   openGraph: {
-    title: 'collective intelligence - human demand research and advisory',
-    description: 'Our mission is to decode and anticipate human demand. We uncover emerging needs and trends, positioning our partners to stay ahead in an ever-evolving market.',
+    title: 'collective intelligence - grow together',
+    description: 'Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships.',
     url: baseUrl,
-    siteName: 'collective intelligence - human demand research and advisory',
+    siteName: 'collective intelligence - grow together',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -42,8 +42,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'collective intelligence - human demand research and advisory',
-    description: 'Our mission is to decode and anticipate human demand. We uncover emerging needs and trends, positioning our partners to stay ahead in an ever-evolving market.',
+    title: 'collective intelligence - grow together',
+    description: 'Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships.',
     images: [`${baseUrl}/og-image.png`],
   },
   robots: {
@@ -90,10 +90,10 @@ export default function RootLayout({
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="collective intelligence" />
-        <meta name="twitter:description" content="Our mission is to decode and anticipate human demand. We uncover emerging needs and trends, positioning our partners to stay ahead in an ever-evolving market." />
+        <meta name="twitter:description" content="Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships." />
         <meta name="twitter:image" content="/og-image.png" />
         <meta name="og:title" content="collective intelligence" />
-        <meta name="og:description" content="Our mission is to decode and anticipate human demand. We uncover emerging needs and trends, positioning our partners to stay ahead in an ever-evolving market." />
+        <meta name="og:description" content="Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships." />
         <meta name="og:url" content={baseUrl} />
         <meta name="og:site_name" content="collective intelligence" />
         <meta name="og:image" content="/og-image.png" />
