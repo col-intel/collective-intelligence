@@ -6,7 +6,7 @@ interface Project {
   status: string;
 }
 
-interface NonProfit {
+interface Advisory {
   name: string;
   url: string;
   year: number;
@@ -65,16 +65,24 @@ export function Portfolio() {
     }
   ]
 
-  const nonProfits = [
+  const advisory = [
     { name: "Acreditar", url: "https://acreditar.org.pt/", year: 2024 },
+    { name: "Raise n Go", url: "https://raisengo.com/", year: 2024 },
     { name: "CASA", url: "https://www.casa-apoioaosemabrigo.org/", year: 2024 },
-    { name: "Animas Portugal", url: "https://animasportugal.org/", year: 2024 }
+    { name: "Animas Portugal", url: "https://animasportugal.org/", year: 2024 },
+    { name: "Dark Matter", url: "https://www.darkmatter.is/", year: 2023 },
+    { name: "Parfois", url: "https://www.parfois.com/", year: 2023 },
+    { name: "Epic Travel", url: "https://epic.travel/", year: 2022 },
+    { name: "xMoney", url: "https://www.xmoney.com/", year: 2022 },
+    { name: "Coflyt", url: "https://www.coflyt.com/", year: 2021 },
+    { name: "BePro", url: "https://bepro.network/", year: 2021 }
+
   ]
 
   return (
     <div className="space-y-8">
       <div>
-        <h2 className="font-semibold text-xl mb-4">ventures & advisory</h2>
+        <h2 className="font-semibold text-xl mb-4">ventures</h2>
         <div className="grid grid-cols-1 gap-4">
           {projects.map((project) => (
             <a
@@ -104,9 +112,9 @@ export function Portfolio() {
       </div>
 
       <div>
-        <h2 className="font-semibold text-xl mb-4">non-profits we worked with</h2>
+        <h2 className="font-semibold text-xl mb-4">advisory</h2>
         <div className="flex flex-wrap gap-4">
-          {nonProfits.map((org) => (
+          {advisory.map((org) => (
             <a
               key={org.name}
               href={org.url}

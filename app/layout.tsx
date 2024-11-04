@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'collective intelligence - grow together',
     template: '%s | collective intelligence - grow together',
   },
-  description: 'Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships.',
+  description: "At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life.",
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: 'collective intelligence - grow together',
-    description: 'Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships.',
+    description: "At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life.",
     url: baseUrl,
     siteName: 'collective intelligence - grow together',
     locale: 'en_US',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'collective intelligence - grow together',
-    description: 'Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships.',
+    description: "At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life.",
     images: [`${baseUrl}/og-image.png`],
   },
   robots: {
@@ -90,10 +90,10 @@ export default function RootLayout({
         <meta name="msapplication-config" content="/browserconfig.xml" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="collective intelligence" />
-        <meta name="twitter:description" content="Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships." />
+        <meta name="twitter:description" content="At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life." />
         <meta name="twitter:image" content="/og-image.png" />
         <meta name="og:title" content="collective intelligence" />
-        <meta name="og:description" content="Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships." />
+        <meta name="og:description" content="At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life." />
         <meta name="og:url" content={baseUrl} />
         <meta name="og:site_name" content="collective intelligence" />
         <meta name="og:image" content="/og-image.png" />

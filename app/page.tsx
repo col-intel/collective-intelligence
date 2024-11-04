@@ -11,7 +11,7 @@ export default function Page() {
         </h1>
       </div>
       <p className="mb-4">
-        {`Modern organizations are facing incremental challenges with digital distribution. At Collective Intelligence, we solve this by fostering growth through strategic partnerships. We help organizations in Retail, Finance, DLT, Legal, Philanthropy, and Education find and implement the right alliances to expand their reach effectively.`}
+        {`At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life. Leveraging years of expertise in strategic partnerships, we address the ever-growing challenges of digital distribution by connecting technology-driven organizations with the alliances they need to grow and thrive.`}
       </p>
       <div className="my-8">
         <Portfolio />
