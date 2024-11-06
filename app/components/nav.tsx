@@ -4,7 +4,7 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  'mailto:hello@collective.cm': {
+  'mailto:hello@collective.ci': {
     name: 'contact',
   },
 }
