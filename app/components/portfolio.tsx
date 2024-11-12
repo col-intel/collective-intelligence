@@ -16,7 +16,7 @@ interface Creation {
   name: string;
   description: string;
   url: string;
-  status: string;
+  year: number;
 }
 
 export function Portfolio() {
@@ -79,6 +79,15 @@ export function Portfolio() {
 
   ]
 
+  const creations = [
+    {
+      name: "Type.cm",
+      description: "Too busy for traditional journaling? We get it. That's why we made it as simple as replying to your morning email. Build a better you, one reply at a time.",
+      url: "https://type.cm",
+      year: 2024
+    }
+  ]
+
   return (
     <div className="space-y-8">
       <div>
@@ -126,6 +135,31 @@ export function Portfolio() {
               <span className="text-neutral-600 dark:text-neutral-400 text-sm ml-2">
                 ({org.year})
               </span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="font-semibold text-xl mb-4">fun</h2>
+        <div className="grid grid-cols-1 gap-4">
+          {creations.map((creation) => (
+            <a
+              key={creation.name}
+              href={creation.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+            >
+              <div className="flex justify-between items-start">
+                <h3 className="font-medium">{creation.name}</h3>
+                <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                  {creation.year}
+                </span>
+              </div>
+              <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+                {creation.description}
+              </p>
             </a>
           ))}
         </div>
