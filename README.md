@@ -13,7 +13,7 @@ This is a porfolio site template complete with a blog. Includes:
 
 ## Demo
 
-https://collective.ci
+https://ci.vc
 
 ## How to Use
 

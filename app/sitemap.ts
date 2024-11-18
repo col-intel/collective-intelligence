@@ -1,6 +1,6 @@
 import { getBlogPosts } from 'app/blog/utils'
 
-export const baseUrl = 'https://www.collective.ci'
+export const baseUrl = 'https://www.ci.vc'
 
 export default async function sitemap() {
   let blogs = getBlogPosts().map((post) => ({
