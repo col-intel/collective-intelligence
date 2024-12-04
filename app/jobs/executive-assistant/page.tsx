@@ -58,7 +58,8 @@ export default function Page() {
         "Latest iPhone",
         "Paid subscriptions to essential work tools (Notion, ChatGPT Plus, etc.)",
         "Modern office in Porto, Portugal",
-        "Flexible working hours and hybrid work options"
+        "Flexible working hours and hybrid work options",
+        "Company car"
       ]}
     />
   )
