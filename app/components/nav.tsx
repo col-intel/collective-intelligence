@@ -4,6 +4,9 @@ const navItems = {
   '/': {
     name: 'home',
   },
+  '/jobs/executive-assistant': {
+    name: 'jobs',
+  },
   'mailto:hi@ci.vc': {
     name: 'contact',
   },
