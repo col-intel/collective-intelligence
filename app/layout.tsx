@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: 'collective intelligence - grow together',
-    description: "At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life.",
+    description: "At Collective Intelligence, we invest in visionary founders who are building the infrastructure for the next 1 billion jobs.",
     url: 'https://www.ci.vc',
     siteName: 'collective intelligence - grow together',
     locale: 'en_US',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'collective intelligence - grow together',
-    description: "At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life.",
+    description: "At Collective Intelligence, we invest in visionary founders who are building the infrastructure for the next 1 billion jobs.",
     images: ['https://ci.vc/og-image.png'],
     creator: '@ci_vc',
   },
