@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     default: 'collective intelligence - grow together',
     template: '%s | collective intelligence - grow together',
   },
-  description: "At Collective Intelligence, we build, advise, and invest in web projects designed to enhance humanity's quality of life.",
+  description: "At Collective Intelligence, we invest in visionary founders who are building the infrastructure for the next 1 billion jobs.",
   icons: {
     icon: [
       { url: '/favicon.ico' },
