@@ -15,6 +15,13 @@ interface Advisory {
 export function Portfolio() {
   const projects = [
     {
+      name: "Robot.jobs",
+      description: "Niche job board where you can discover and subscribe to global robotics careers with real salary insights and in sync listings from US and Europe's top companies.",
+      url: "https://robot.jobs",
+      community_size: "(Pre-Launch)",
+      status: "Active"
+    },
+    {
       name: "SoSquared",
       description: "The UK's most agile influencer marketing platform, delivering all the tools needed for influencers and brands to create captivating content together.",
       url: "https://sosquared.com/",
@@ -40,7 +47,7 @@ export function Portfolio() {
       description: "ImpactMarket enables any vulnerable community to implement poverty alleviation mechanisms, like Unconditional Basic Income.",
       url: "https://www.impactmarket.com/",
       community_size: "44k+ Beneficiaries",
-      status: "Active"
+      status: "Inactive"
     },
     {
       name: "Coinvision",
