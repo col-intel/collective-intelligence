@@ -16,7 +16,7 @@ export function Portfolio() {
   const projects = [
     {
       name: "Robot.jobs",
-      description: "Niche job board where you can discover and subscribe to global robotics careers with real salary insights and in sync listings from US and Europe's top companies.",
+      description: "Robot.Jobs helps industry professionals discover and compare automation solutions to improve operational efficiency, reduce costs, and boost productivity.",
       url: "https://robot.jobs",
       community_size: "(Pre-Launch)",
       status: "Active"

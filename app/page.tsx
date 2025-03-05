@@ -1,12 +1,19 @@
 import { BlogPosts } from 'app/components/posts'
 import { Portfolio } from 'app/components/portfolio'
 import { CommunityProjects } from 'app/components/CommunityProjects'
+import Image from 'next/image'
 
 export default function Page() {
   return (
     <section>
       <div className="flex items-center mb-8">
-        <div className="w-5 h-5 bg-orange-200 rounded-full mr-2" aria-label="Collective Intelligence logo" />
+        <Image 
+          src="/ci-logo.png" 
+          alt="Collective Intelligence logo" 
+          width={20} 
+          height={20} 
+          className="mr-2"
+        />
         <h1 className=" text-2xl font-semibold tracking-tighter">
           collective intelligence
         </h1>
