@@ -1,6 +1,5 @@
 import { BlogPosts } from 'app/components/posts'
 import { Portfolio } from 'app/components/portfolio'
-import { CommunityProjects } from 'app/components/CommunityProjects'
 import Image from 'next/image'
 
 export default function Page() {
@@ -34,9 +33,6 @@ export default function Page() {
         <h2 className="font-semibold text-xl mb-4">Latest Posts</h2>
         <BlogPosts />
       </div>
-
-      {/* Community Projects Section */}
-      <CommunityProjects />
     </section>
   )
 }

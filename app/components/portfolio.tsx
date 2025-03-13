@@ -12,12 +12,18 @@ interface Advisory {
   year: number;
 }
 
+interface OpenSourceProject {
+  name: string;
+  description: string;
+  url: string;
+}
+
 export function Portfolio() {
-  const projects = [
+  const projectsData = [
     {
-      name: "Robot.jobs",
-      description: "Robot.Jobs helps industry professionals discover and compare automation solutions to improve operational efficiency, reduce costs, and boost productivity.",
-      url: "https://robot.jobs",
+      name: "fundraising.jobs",
+      description: "fundraising.jobs is a niche job board focused on connecting and upskilling Fundraising Talent to Leading Organisations Globally.",
+      url: "",
       community_size: "(Pre-Launch)",
       status: "Active"
     },
@@ -33,7 +39,7 @@ export function Portfolio() {
       description: "Polkastarter is the Leading Decentralized Fundraising Platform.",
       url: "https://polkastarter.com",
       community_size: "1M+ Users",
-      status: "Active"
+      status: "Acquired"
     },
     {
       name: "Talent Protocol",
@@ -65,6 +71,18 @@ export function Portfolio() {
     }
   ]
 
+  // Sort projects to prioritize active companies
+  const projects = [...projectsData].sort((a, b) => {
+    // Define priority order: Active > Acquired > Inactive
+    const statusPriority = {
+      "Active": 1,
+      "Acquired": 2,
+      "Inactive": 3
+    };
+    
+    return statusPriority[a.status] - statusPriority[b.status];
+  });
+
   const advisory = [
     { name: "Acreditar", url: "https://acreditar.org.pt/", year: 2024 },
     { name: "Raise n Go", url: "https://raisengo.com/", year: 2024 },
@@ -88,34 +106,74 @@ export function Portfolio() {
     }
   ]
 
+  const openSourceProjects = [
+    {
+      name: "gateless-donations",
+      description: "A zero-dependency static donation widget for non-profit organizations that doesn't require a payment gateway. Built with vanilla JavaScript and Tailwind CSS.",
+      url: "https://github.com/col-intel/gateless-donations"
+    },
+    {
+      name: "growth-development-template",
+      description: "This repository contains a structured and practical Growth Development Experimentation Template designed to systematically validate, measure, and refine growth initiatives at every stage—from early…",
+      url: "https://github.com/col-intel/growth-development-template"
+    },
+    {
+      name: "collective-intelligence",
+      description: "This website.",
+      url: "https://github.com/col-intel/collective-intelligence"
+    }
+  ]
+
   return (
     <div className="space-y-8">
       <div>
         <h2 className="font-semibold text-xl mb-4">ventures</h2>
         <div className="grid grid-cols-1 gap-4">
           {projects.map((project) => (
-            <a
-              key={project.name}
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
-            >
-              <div className="flex justify-between items-start">
-                <h3 className="font-medium">{project.name}</h3>
-                <span className="text-sm text-neutral-600 dark:text-neutral-400">
-                  {project.status}
-                </span>
-              </div>
-              <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
-                {project.description}
-              </p>
-              {project.community_size && (
-                <p className="text-sm text-neutral-500 dark:text-neutral-500 mt-2">
-                  {project.community_size}
+            project.url ? (
+              <a
+                key={project.name}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+              >
+                <div className="flex justify-between items-start">
+                  <h3 className="font-medium">{project.name}</h3>
+                  <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                    {project.status}
+                  </span>
+                </div>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+                  {project.description}
                 </p>
-              )}
-            </a>
+                {project.community_size && (
+                  <p className="text-sm text-neutral-500 dark:text-neutral-500 mt-2">
+                    {project.community_size}
+                  </p>
+                )}
+              </a>
+            ) : (
+              <div
+                key={project.name}
+                className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+              >
+                <div className="flex justify-between items-start">
+                  <h3 className="font-medium">{project.name}</h3>
+                  <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                    {project.status}
+                  </span>
+                </div>
+                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+                  {project.description}
+                </p>
+                {project.community_size && (
+                  <p className="text-sm text-neutral-500 dark:text-neutral-500 mt-2">
+                    {project.community_size}
+                  </p>
+                )}
+              </div>
+            )
           ))}
         </div>
       </div>
@@ -135,6 +193,26 @@ export function Portfolio() {
               <span className="text-neutral-600 dark:text-neutral-400 text-sm ml-2">
                 ({org.year})
               </span>
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div>
+        <h2 className="font-semibold text-xl mb-4">open source</h2>
+        <div className="grid grid-cols-1 gap-4">
+          {openSourceProjects.map((project) => (
+            <a
+              key={project.name}
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+            >
+              <h3 className="font-medium">{project.name}</h3>
+              <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+                {project.description}
+              </p>
             </a>
           ))}
         </div>

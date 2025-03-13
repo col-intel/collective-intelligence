@@ -1,7 +1,0 @@
-This directory contains images for community projects.
-
-For the ruasegura project, you'll need to add:
-1. ruasegura-logo.png - A logo for the Rua Segura project
-2. ruasegura-screenshot.png - A screenshot of the Rua Segura website
-
-You can obtain these images from www.ruasegura.pt or create placeholder images until you have the official ones. 
