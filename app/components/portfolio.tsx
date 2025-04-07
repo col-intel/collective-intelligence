@@ -21,10 +21,10 @@ interface OpenSourceProject {
 export function Portfolio() {
   const projectsData = [
     {
-      name: "fundraising.jobs",
-      description: "fundraising.jobs is a niche job board focused on connecting and upskilling Fundraising Talent to Leading Organisations Globally.",
-      url: "",
-      community_size: "(Pre-Launch)",
+      name: "Raise.new",
+      description: "Specialized partner ecosystem connecting content creators, publishers, and communities with verified and safe mental health resources & tools.",
+      url: "https://raise.new/",
+      community_size: "Recently Launched",
       status: "Active"
     },
     {
