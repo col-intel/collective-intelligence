@@ -52,8 +52,8 @@ export function Community() {
   return (
     <div className="max-w-4xl mx-auto">
       {/* Header Section */}
-      <div className="mb-16 text-center">
-        <h1 className="text-4xl font-bold tracking-tight mb-4">{communityInfo.title}</h1>
+      <div className="mb-16">
+        <h1 className="text-4xl font-bold tracking-tight mb-4">{communityInfo.title} 🍚</h1>
         <p className="text-xl text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">{communityInfo.subtitle}</p>
       </div>
       
