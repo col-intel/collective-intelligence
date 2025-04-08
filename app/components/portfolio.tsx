@@ -20,13 +20,7 @@ interface OpenSourceProject {
 
 export function Portfolio() {
   const projectsData = [
-    {
-      name: "Raise.new",
-      description: "Specialized partner ecosystem connecting content creators, publishers, and communities with verified and safe mental health resources & tools.",
-      url: "https://raise.new/",
-      community_size: "Recently Launched",
-      status: "Active"
-    },
+    
     {
       name: "SoSquared",
       description: "The UK's most agile influencer marketing platform, delivering all the tools needed for influencers and brands to create captivating content together.",
@@ -40,6 +34,13 @@ export function Portfolio() {
       url: "https://polkastarter.com",
       community_size: "1M+ Users",
       status: "Acquired"
+    },
+    {
+      name: "Raise",
+      description: "Specialized partner ecosystem connecting content creators, publishers, and communities with verified and safe mental health resources & tools.",
+      url: "https://raise.new/",
+      community_size: "50+ Partners",
+      status: "Active"
     },
     {
       name: "Talent Protocol",
