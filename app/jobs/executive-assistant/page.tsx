@@ -7,7 +7,7 @@ export const metadata = {
     title: 'Executive Assistant Position | Collective Intelligence',
     description: 'Join our team as an Executive Assistant at Collective Intelligence in Porto, Portugal. We offer competitive benefits, modern tools, and a dynamic work environment.',
     type: 'website',
-    url: 'https://www.ci.vc/jobs/executive-assistant',
+    url: 'https://ci.vc/jobs/executive-assistant',
     siteName: 'Collective Intelligence',
     locale: 'en_US',
   },

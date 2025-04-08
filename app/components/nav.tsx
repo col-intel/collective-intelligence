@@ -4,8 +4,8 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/jobs/executive-assistant': {
-    name: 'jobs',
+  '/one-billion-jobs': {
+    name: 'one billion jobs',
   },
   'mailto:hi@ci.vc': {
     name: 'contact',

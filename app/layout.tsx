@@ -9,7 +9,7 @@ import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.ci.vc'),
+  metadataBase: new URL('https://ci.vc'),
   title: {
     default: 'collective intelligence - grow together',
     template: '%s | collective intelligence - grow together',
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'collective intelligence - grow together',
     description: "At Collective Intelligence, we invest in visionary founders who are building the infrastructure for the next 1 billion jobs.",
-    url: 'https://www.ci.vc',
+    url: 'https://ci.vc',
     siteName: 'collective intelligence - grow together',
     locale: 'en_US',
     type: 'website',
