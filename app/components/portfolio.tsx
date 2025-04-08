@@ -37,7 +37,7 @@ export function Portfolio() {
     },
     {
       name: "Raise",
-      description: "Specialized partner ecosystem connecting content creators, publishers, and communities with verified and safe mental health resources & tools.",
+      description: "Specialized partner ecosystem connecting content creators, publishers, and professionals with verified and safe content filtering solutions.",
       url: "https://raise.new/",
       community_size: "50+ Partners",
       status: "Active"
