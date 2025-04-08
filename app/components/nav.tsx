@@ -4,8 +4,8 @@ const navItems = {
   '/': {
     name: 'home',
   },
-  '/one-billion-jobs': {
-    name: 'one billion jobs',
+  '/lunch': {
+    name: 'lunch',
   },
   'mailto:hi@ci.vc': {
     name: 'contact',
