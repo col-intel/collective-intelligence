@@ -37,9 +37,9 @@ export function Portfolio() {
     },
     {
       name: "Raise",
-      description: "Specialized partner ecosystem connecting content creators, publishers, and professionals with verified and safe content filtering solutions.",
+      description: "The Friendly Panic Button for Behavioural Addiction Recovery.",
       url: "https://raise.new/",
-      community_size: "50+ Partners",
+      community_size: "Pre-Launch",
       status: "Active"
     },
     {

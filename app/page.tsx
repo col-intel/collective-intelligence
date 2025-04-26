@@ -18,14 +18,14 @@ export default function Page() {
         </h1>
       </div>
       <p className="mb-4">
-        {`At Collective Intelligence, we invest in visionary organizations that are building the infrastructure for the next 1 billion jobs.`}
+        {`We are a family office investing in founders that want to build products we really want to use.`}
       </p>
       <p className="mb-4">
-        {`Historically, technological advancements have transformed job landscapes, often leading to improved working conditions and more meaningful careers. In this AI-driven era, we envision new career frameworks that will empower individuals to run more profitable businesses or provide human-centric services.`}
+        {`We're simply looking for products that solve real problems in our daily lives. No grand visions of transforming humanity required - just practical solutions that make us think "wow, I'd definitely use that!"`}
       </p>
-      <p className="mb-4">
-        {`We are committed to funding founders who have a clear vision for the future of work and can answer the pressing question of what these new careers will be. By doing so, we aim to create opportunities that are not only sustainable but also beneficial to humanity.`}
-      </p>
+      <div className="post-it-note">
+        {`If you're building something you're passionate about and think we might love to use it too, we'd like to talk. Email us at hi@ci.vc`}
+      </div>
       <div className="my-8">
         <Portfolio />
       </div>

@@ -2,11 +2,18 @@ import './global.css'
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
+import { Manrope } from 'next/font/google'
 import { Navbar } from './components/nav'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
+
+const manrope = Manrope({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-manrope',
+})
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ci.vc'),
@@ -14,7 +21,7 @@ export const metadata: Metadata = {
     default: 'collective intelligence - grow together',
     template: '%s | collective intelligence - grow together',
   },
-  description: "At Collective Intelligence, we invest in visionary founders who are building the infrastructure for the next 1 billion jobs.",
+  description: "We are a family office investing in founders that want to build products we really want to use.",
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -27,7 +34,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: 'collective intelligence - grow together',
-    description: "At Collective Intelligence, we invest in visionary founders who are building the infrastructure for the next 1 billion jobs.",
+    description: "We are a family office investing in founders that want to build products we really want to use.",
     url: 'https://ci.vc',
     siteName: 'collective intelligence - grow together',
     locale: 'en_US',
@@ -43,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'collective intelligence - grow together',
-    description: "At Collective Intelligence, we invest in visionary founders who are building the infrastructure for the next 1 billion jobs.",
+    description: "We are a family office investing in founders that want to build products we really want to use.",
     images: ['https://ci.vc/og-image.png'],
     creator: '@ci_vc',
   },
@@ -62,10 +69,11 @@ export default function RootLayout({
       className={cx(
         'text-black bg-white dark:text-white dark:bg-black',
         GeistSans.variable,
-        GeistMono.variable
+        GeistMono.variable,
+        manrope.variable
       )}
     >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
+      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto font-manrope">
         <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
           <Navbar />
           {children}
