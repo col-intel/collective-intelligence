@@ -4,6 +4,9 @@ const navItems = {
   '/': {
     name: 'home',
   },
+  '/nest': {
+    name: 'nest',
+  },
   'mailto:hi@ci.vc': {
     name: 'contact',
   },
