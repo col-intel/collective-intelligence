@@ -37,21 +37,25 @@ export default function Nest() {
         Welcome to Nest – our office and community center in Porto, Portugal. Just a 5-minute walk from the ocean, it's where our team works daily while hosting a vibrant community space dedicated to intergenerational learning and connection.
       </p>
 
-      <div className="my-8 rounded-lg bg-neutral-100 dark:bg-neutral-900 p-4">
-        <p className="italic">
-          Nest is where we bridge generations through technology. We host almost daily upskilling sessions teaching older adults how to navigate technology and avoid online scams, while guiding younger generations in creating games and digital products to serve their communities.
-        </p>
-      </div>
+      
+
+      <h2 className="font-semibold text-xl mt-8 mb-4">Who hangs out at Nest</h2>
+
+      <ul className="list-disc pl-6 space-y-2 mb-6">
+        <li>We and our friends</li>
+        <li>Our Portfolio Companies (for free)</li>
+        <li>Senior Citizens in the Local Community (also for free)</li>
+      </ul>
 
       <h2 className="font-semibold text-xl mt-8 mb-4">What we offer</h2>
       <ul className="list-disc pl-6 space-y-2 mb-6">
-        <li>Tech upskilling sessions for seniors (avoiding scams, basic digital literacy)</li>
-        <li>Game development and digital product creation for youth</li>
+        
         <li>Curated book library optimized to spark ideas</li>
         <li>Inspiring memorabilia</li>
         <li>Comfortable spaces to work, read, connect and have coffee</li>
         <li>An open office environment where you can see how we work</li>
         <li>Opportunities to interact with our team and creators</li>
+        <li>Daily technology workshops for seniors</li>
       </ul>
 
       <h2 className="font-semibold text-xl mt-8 mb-4">Visit us</h2>
@@ -61,16 +65,19 @@ export default function Nest() {
         <p className="mb-2"><strong>Opening Hours:</strong> Monday-Friday 9am-7pm, Saturday 10am-6pm</p>
       </div>
 
+      
+     
+
       <div className="post-it-note mt-8">
-        Join our community. Whether you want to learn how to protect yourself online or create your digital product.
+        We allocate a percentage of our operating profit to host workshops and community events for seniors. Our vision is to inspire other companies to follow our lead and create similar initiatives in their communities.
       </div>
 
       <div className="mt-8 text-center">
         <a 
-          href="mailto:hi@ci.vc?subject=Apply%20for%20Nest%20Membership&body=Hello,%0A%0AI'm%20interested%20in%20applying%20for%20a%20Nest%20membership.%0A%0AName:%20%0AAge:%20%0AInterests:%20%0A%0AWhat%20I%20hope%20to%20gain%20from%20Nest:%20%0A%0A" 
+          href="mailto:hi@ci.vc?subject=Contact%20us%20from%20Nest%20website" 
           className="bg-black text-white dark:bg-white dark:text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
         >
-          Apply for Membership
+          Contact us
         </a>
       </div>
     </section>
