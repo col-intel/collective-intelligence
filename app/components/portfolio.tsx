@@ -36,8 +36,8 @@ export function Portfolio() {
       status: "Acquired"
     },
     {
-      name: "Raise",
-      description: "The Friendly Panic Button for Behavioural Addiction Recovery.",
+      name: "Quit",
+      description: "Behavioral Addiction Recovery Community & Recommendation Engine.",
       url: "https://raise.new/",
       community_size: "Pre-Launch",
       status: "Active"
