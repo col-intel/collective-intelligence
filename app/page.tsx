@@ -21,7 +21,7 @@ export default function Page() {
         {`We are a family office investing in founders that want to build products we really want to use.`}
       </p>
       <p className="mb-4">
-        {`We're simply looking for products that solve real problems in our daily lives. No grand visions of transforming humanity required."`}
+        {`We're simply looking for products that solve real problems in our daily lives. No grand visions of transforming humanity required.`}
       </p>
       <div className="post-it-note">
         {`If you're building something you're passionate about and think we might love to use it too, we'd like to talk. Email us at hi@ci.vc`}
