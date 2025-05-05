@@ -37,7 +37,7 @@ export function Portfolio() {
     },
     {
       name: "Quit",
-      description: "Privacy-first Behavioral Addiction Recovery Accountability.",
+      description: "Privacy-first Behavioral Addiction Recovery.",
       url: "https://raise.new/",
       community_size: "Pre-Launch",
       status: "Active"
