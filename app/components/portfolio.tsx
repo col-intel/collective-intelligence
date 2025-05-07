@@ -37,7 +37,7 @@ export function Portfolio() {
     },
     {
       name: "Quit",
-      description: "Privacy-first Behavioral Addiction Recovery.",
+      description: "World-Class Behavioral Addiction Therapy, on your schedule.",
       url: "https://raise.new/",
       community_size: "Pre-Launch",
       status: "Active"
