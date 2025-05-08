@@ -2,8 +2,8 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Nest | Community Center & Office',
-  description: 'Our office and community center in Matosinhos, Porto - where we collaborate with mental health researchers and provide workshops on mental wellbeing for the local community.',
+  title: 'Nest | Office',
+  description: 'Our office for our team and friends in Porto, Portugal.',
 }
 
 export default function Nest() {
@@ -34,7 +34,7 @@ export default function Nest() {
       </div>
       
       <p className="mb-4">
-        Welcome to Nest – our office and community center in Porto, Portugal. Just a 5-minute walk from the ocean, it's where our team works daily while hosting a vibrant community space dedicated to mental health research and workshops for the local community.
+        Welcome to Nest – our office for our team and friends in Porto, Portugal. Just a 5-minute walk from the ocean, it's where our team works daily.
       </p>
 
       
@@ -44,7 +44,6 @@ export default function Nest() {
       <ul className="list-disc pl-6 space-y-2 mb-6">
         <li>We and our friends</li>
         <li>Our Portfolio Companies (for free)</li>
-        <li>Mental Health Researchers & Professionals (also for free)</li>
       </ul>
 
       <h2 className="font-semibold text-xl mt-8 mb-4">What we offer</h2>
@@ -53,9 +52,6 @@ export default function Nest() {
         <li>Curated book library optimized to spark ideas</li>
         <li>Inspiring memorabilia</li>
         <li>Comfortable spaces to work, read, connect and have coffee</li>
-        <li>An open office environment where you can see how we work</li>
-        <li>Opportunities to interact with our team and creators</li>
-        <li>Free daily mental health workshops for the local community</li>
       </ul>
 
       <h2 className="font-semibold text-xl mt-8 mb-4">Visit us</h2>
@@ -65,12 +61,6 @@ export default function Nest() {
         <p className="mb-2"><strong>Opening Hours:</strong> Monday-Friday 9am-7pm, Saturday 10am-6pm</p>
       </div>
 
-      
-     
-
-      <div className="post-it-note mt-8">
-        We allocate a percentage of our operating profit to host mental health workshops and community events. Our vision is to inspire other companies to follow our lead and create similar initiatives that promote mental wellbeing in their communities.
-      </div>
 
       <div className="mt-8 text-center">
         <a 
