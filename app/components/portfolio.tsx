@@ -36,13 +36,6 @@ export function Portfolio() {
       status: "Acquired"
     },
     {
-      name: "Quit",
-      description: "World-Class Behavioral Addiction Therapy, on your schedule.",
-      url: "https://raise.new/",
-      community_size: "Pre-Launch",
-      status: "Active"
-    },
-    {
       name: "Talent Protocol",
       description: "Professional reputation data for the new internet.",
       url: "https://talentprotocol.com",
