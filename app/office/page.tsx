@@ -2,11 +2,11 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Nest | Office',
+  title: 'Office | Collective Intelligence',
   description: 'Our office for our team and friends in Porto, Portugal.',
 }
 
-export default function Nest() {
+export default function Office() {
   return (
     <section>
       <div className="flex items-center mb-8">
@@ -18,14 +18,14 @@ export default function Nest() {
           className="mr-2"
         />
         <h1 className="text-2xl font-semibold tracking-tighter">
-          nest
+          office
         </h1>
       </div>
       
       <div className="mb-8">
         <Image
           src="/thehouse.png"
-          alt="Nest - Collective Intelligence's community center and office"
+          alt="Office - Collective Intelligence's community center and office"
           width={800}
           height={450}
           className="rounded-lg"
@@ -34,12 +34,12 @@ export default function Nest() {
       </div>
       
       <p className="mb-4">
-        Welcome to Nest – our office for our team and friends in Porto, Portugal. Just a 5-minute walk from the ocean, it's where our team works daily.
+        Welcome to our office – a space for our team and friends in Porto, Portugal. Just a 5-minute walk from the ocean, it's where our team works daily.
       </p>
 
       
 
-      <h2 className="font-semibold text-xl mt-8 mb-4">Who hangs out at Nest</h2>
+      <h2 className="font-semibold text-xl mt-8 mb-4">Who hangs out at our office</h2>
 
       <ul className="list-disc pl-6 space-y-2 mb-6">
         <li>We and our friends</li>
@@ -62,12 +62,13 @@ export default function Nest() {
       </div>
 
 
-      <div className="mt-8 text-center">
+      <div className="post-it-note text-center">
+        <p className="mb-1">Talk to us anytime:</p>
         <a 
-          href="mailto:hi@ci.vc?subject=Contact%20us%20from%20Nest%20website" 
-          className="bg-black text-white dark:bg-white dark:text-black px-6 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity"
+          href="mailto:hi@ci.vc" 
+          className="text-black font-medium underline"
         >
-          Contact us
+          hi@ci.vc
         </a>
       </div>
     </section>

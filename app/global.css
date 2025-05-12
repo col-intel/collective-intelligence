@@ -6,31 +6,20 @@
 }
 
 :root {
-  --sh-class: #2d5e9d;
-  --sh-identifier: #354150;
+  --sh-class: #4c97f8;
+  --sh-identifier: white;
   --sh-sign: #8996a3;
-  --sh-string: #007f7a;
-  --sh-keyword: #e02518;
+  --sh-string: #0fa295;
+  --sh-keyword: #f47067;
   --sh-comment: #a19595;
   --sh-jsxliterals: #6266d1;
   --sh-property: #e25a1c;
   --sh-entity: #e25a1c;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --sh-class: #4c97f8;
-    --sh-identifier: white;
-    --sh-keyword: #f47067;
-    --sh-string: #0fa295;
-  }
-  html {
-    color-scheme: dark;
-  }
-}
-
 html {
   min-width: 360px;
+  color-scheme: dark;
 }
 
 .font-manrope {
@@ -38,7 +27,7 @@ html {
 }
 
 .post-it-note {
-  background-color: #f5d742;
+  background-color: #e6b800;
   padding: 1.5rem;
   transform: rotate(-1deg);
   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
@@ -48,11 +37,6 @@ html {
   border-radius: 2px;
   line-height: 1.5;
   margin: 1.5rem 0;
-}
-
-.dark .post-it-note {
-  background-color: #e6b800;
-  color: #333;
 }
 
 .prose .anchor {
@@ -70,11 +54,11 @@ html {
 }
 
 .prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+  @apply underline transition-all decoration-neutral-600 underline-offset-2 decoration-[0.1em];
 }
 
 .prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
+  @apply text-neutral-700;
   content: '#';
 }
 
@@ -83,7 +67,7 @@ html {
 }
 
 .prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 text-sm;
+  @apply bg-neutral-900 rounded-lg overflow-x-auto border border-neutral-900 py-2 px-3 text-sm;
 }
 
 .prose code {
@@ -106,7 +90,7 @@ html {
 }
 
 .prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+  @apply my-4 text-neutral-200;
 }
 
 .prose h1 {

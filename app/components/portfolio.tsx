@@ -18,6 +18,13 @@ interface OpenSourceProject {
   url: string;
 }
 
+interface Creation {
+  name: string;
+  description: string;
+  url: string;
+  year: number;
+}
+
 export function Portfolio() {
   const projectsData = [
     
@@ -93,33 +100,48 @@ export function Portfolio() {
 
   const creations = [
     {
-      name: "Type.cm",
-      description: "Too busy for traditional journaling? We get it. That's why we made it as simple as replying to your morning email. Build a better you, one reply at a time.",
-      url: "https://type.cm",
-      year: 2024
+      name: "steps.org",
+      description: "An ecosystem that brings communities together through group walks that combat loneliness while raising funds for important causes.",
+      url: "https://steps.org",
+      status: "Active"
     }
   ]
 
-  const openSourceProjects = [
+  const freeTools = [
     {
       name: "gateless-donations",
       description: "A zero-dependency static donation widget for non-profit organizations that doesn't require a payment gateway. Built with vanilla JavaScript and Tailwind CSS.",
       url: "https://github.com/col-intel/gateless-donations"
-    },
-    {
-      name: "growth-development-template",
-      description: "This repository contains a structured and practical Growth Development Experimentation Template designed to systematically validate, measure, and refine growth initiatives at every stage—from early…",
-      url: "https://github.com/col-intel/growth-development-template"
-    },
-    {
-      name: "collective-intelligence",
-      description: "This website.",
-      url: "https://github.com/col-intel/collective-intelligence"
     }
   ]
 
   return (
     <div className="space-y-8">
+      <div>
+        <h2 className="font-semibold text-xl mb-4">creations</h2>
+        <div className="grid grid-cols-1 gap-4">
+          {creations.map((creation) => (
+            <a
+              key={creation.name}
+              href={creation.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-4 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
+            >
+              <div className="flex justify-between items-start">
+                <h3 className="font-medium">{creation.name}</h3>
+                <span className="text-sm text-neutral-400">
+                  {creation.status}
+                </span>
+              </div>
+              <p className="text-neutral-400 text-sm mt-2">
+                {creation.description}
+              </p>
+            </a>
+          ))}
+        </div>
+      </div>
+
       <div>
         <h2 className="font-semibold text-xl mb-4">ventures</h2>
         <div className="grid grid-cols-1 gap-4">
@@ -130,19 +152,19 @@ export function Portfolio() {
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+                className="p-4 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
               >
                 <div className="flex justify-between items-start">
                   <h3 className="font-medium">{project.name}</h3>
-                  <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                  <span className="text-sm text-neutral-400">
                     {project.status}
                   </span>
                 </div>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+                <p className="text-neutral-400 text-sm mt-2">
                   {project.description}
                 </p>
                 {project.community_size && (
-                  <p className="text-sm text-neutral-500 dark:text-neutral-500 mt-2">
+                  <p className="text-sm text-neutral-500 mt-2">
                     {project.community_size}
                   </p>
                 )}
@@ -150,19 +172,19 @@ export function Portfolio() {
             ) : (
               <div
                 key={project.name}
-                className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+                className="p-4 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
               >
                 <div className="flex justify-between items-start">
                   <h3 className="font-medium">{project.name}</h3>
-                  <span className="text-sm text-neutral-600 dark:text-neutral-400">
+                  <span className="text-sm text-neutral-400">
                     {project.status}
                   </span>
                 </div>
-                <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+                <p className="text-neutral-400 text-sm mt-2">
                   {project.description}
                 </p>
                 {project.community_size && (
-                  <p className="text-sm text-neutral-500 dark:text-neutral-500 mt-2">
+                  <p className="text-sm text-neutral-500 mt-2">
                     {project.community_size}
                   </p>
                 )}
@@ -181,10 +203,10 @@ export function Portfolio() {
               href={org.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+              className="px-4 py-2 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
             >
               <span className="font-medium">{org.name}</span>
-              <span className="text-neutral-600 dark:text-neutral-400 text-sm ml-2">
+              <span className="text-neutral-400 text-sm ml-2">
                 ({org.year})
               </span>
             </a>
@@ -193,18 +215,18 @@ export function Portfolio() {
       </div>
 
       <div>
-        <h2 className="font-semibold text-xl mb-4">open source</h2>
+        <h2 className="font-semibold text-xl mb-4">free tools</h2>
         <div className="grid grid-cols-1 gap-4">
-          {openSourceProjects.map((project) => (
+          {freeTools.map((project) => (
             <a
               key={project.name}
               href={project.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-4 rounded-lg border border-neutral-200 dark:border-neutral-800 hover:bg-neutral-50 dark:hover:bg-neutral-900 transition-all"
+              className="p-4 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
             >
               <h3 className="font-medium">{project.name}</h3>
-              <p className="text-neutral-600 dark:text-neutral-400 text-sm mt-2">
+              <p className="text-neutral-400 text-sm mt-2">
                 {project.description}
               </p>
             </a>

@@ -18,13 +18,13 @@ export default function Page() {
         </h1>
       </div>
       <p className="mb-4">
-        {`We are a family office investing in founders that want to build products we really want to use.`}
-      </p>
-      <p className="mb-4">
-        {`We're simply looking for products that solve real problems in our daily lives. No grand visions of transforming humanity required.`}
+        {`We are a research and development lab creating and investing in companies with the potential to build super cool products and generate a significant number of new jobs.`}
       </p>
       <div className="post-it-note">
-        {`If you're building something you're passionate about and think we might love to use it too, we'd like to talk. Email us at hi@ci.vc`}
+        {`If you're building something that fits our mission, we'd love to talk. `}
+        <a href="mailto:hi@ci.vc" className="text-black underline">
+          hi@ci.vc
+        </a>
       </div>
       <div className="my-8">
         <Portfolio />
@@ -32,6 +32,15 @@ export default function Page() {
       <div className="my-8 hidden">
         <h2 className="font-semibold text-xl mb-4">Latest Posts</h2>
         <BlogPosts />
+      </div>
+      <div className="post-it-note text-center mt-12">
+        <p className="mb-1">Talk to us anytime:</p>
+        <a 
+          href="mailto:hi@ci.vc" 
+          className="text-black font-medium underline"
+        >
+          hi@ci.vc
+        </a>
       </div>
     </section>
   )

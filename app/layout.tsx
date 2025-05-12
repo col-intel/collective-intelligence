@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     default: 'collective intelligence - grow together',
     template: '%s | collective intelligence - grow together',
   },
-  description: "We are a family office investing in founders that want to build products we really want to use.",
+  description: "We are a research and development lab creating and investing in companies with the potential to build super cool products and generate a significant number of new jobs.",
   icons: {
     icon: [
       { url: '/favicon.ico' },
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     title: 'collective intelligence - grow together',
-    description: "We are a family office investing in founders that want to build products we really want to use.",
+    description: "We are a research and development lab creating and investing in companies with the potential to build super cool products and generate a significant number of new jobs.",
     url: 'https://ci.vc',
     siteName: 'collective intelligence - grow together',
     locale: 'en_US',
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'collective intelligence - grow together',
-    description: "We are a family office investing in founders that want to build products we really want to use.",
+    description: "We are a research and development lab creating and investing in companies with the potential to build super cool products and generate a significant number of new jobs.",
     images: ['https://ci.vc/og-image.png'],
     creator: '@ci_vc',
   },
@@ -67,7 +67,7 @@ export default function RootLayout({
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        'text-white bg-black',
         GeistSans.variable,
         GeistMono.variable,
         manrope.variable
