@@ -2,11 +2,11 @@ import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Office | Collective Intelligence',
-  description: 'Our office for our team and friends in Porto, Portugal.',
+  title: 'TheLab | Collective Intelligence',
+  description: 'Our lab for our team and friends (like you) in Porto, Portugal.',
 }
 
-export default function Office() {
+export default function TheLab() {
   return (
     <section>
       <div className="flex items-center mb-8">
@@ -18,14 +18,14 @@ export default function Office() {
           className="mr-2"
         />
         <h1 className="text-2xl font-semibold tracking-tighter">
-          office
+         the lab
         </h1>
       </div>
       
       <div className="mb-8">
         <Image
           src="/thehouse.png"
-          alt="Office - Collective Intelligence's community center and office"
+          alt="Your Lab - Collective Intelligence's community center and lab"
           width={800}
           height={450}
           className="rounded-lg"
@@ -34,15 +34,15 @@ export default function Office() {
       </div>
       
       <p className="mb-4">
-        Welcome to our office – a space for our team and friends in Porto, Portugal. Just a 5-minute walk from the ocean, it's where our team works daily.
+        Welcome to the lab – a space for our team and friends (like you) in Porto, Portugal. Just a 5-minute walk from the ocean, it's where our team works daily.
       </p>
 
       
 
-      <h2 className="font-semibold text-xl mt-8 mb-4">Who hangs out at our office</h2>
+      <h2 className="font-semibold text-xl mt-8 mb-4">Who hangs out at the lab</h2>
 
       <ul className="list-disc pl-6 space-y-2 mb-6">
-        <li>We and our friends</li>
+        <li>We and our friends (like you)</li>
         <li>Our Portfolio Companies (for free)</li>
       </ul>
 
@@ -63,7 +63,7 @@ export default function Office() {
 
 
       <div className="post-it-note text-center">
-        <p className="mb-1">Talk to us anytime:</p>
+        <p className="mb-1">Want to create something here?</p>
         <a 
           href="mailto:hi@ci.vc" 
           className="text-black font-medium underline"

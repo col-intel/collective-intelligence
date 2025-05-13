@@ -18,7 +18,7 @@ export default function Page() {
         </h1>
       </div>
       <p className="mb-4">
-        {`We are a research and development lab creating and investing in companies with the potential to build super cool products and generate a significant number of new jobs.`}
+        {`We are a research and development lab creating and investing in companies with the potential to build super cool products and generate a significant number of new (and great) jobs.`}
       </p>
       <div className="post-it-note">
         {`If you're building something that fits our mission, we'd love to talk. `}
