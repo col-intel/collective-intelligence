@@ -101,9 +101,9 @@ export function Portfolio() {
   const creations = [
     {
       name: "steps.org",
-      description: "An ecosystem that brings communities together through group walks that combat loneliness while raising funds for important causes.",
-      url: "https://steps.org",
-      status: "Active"
+      description: "A walking game.",
+      url: "",
+      status: "TBA"
     }
   ]
 
@@ -121,23 +121,40 @@ export function Portfolio() {
         <h2 className="font-semibold text-xl mb-4">creations</h2>
         <div className="grid grid-cols-1 gap-4">
           {creations.map((creation) => (
-            <a
-              key={creation.name}
-              href={creation.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-4 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
-            >
-              <div className="flex justify-between items-start">
-                <h3 className="font-medium">{creation.name}</h3>
-                <span className="text-sm text-neutral-400">
-                  {creation.status}
-                </span>
+            creation.url ? (
+              <a
+                key={creation.name}
+                href={creation.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-4 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
+              >
+                <div className="flex justify-between items-start">
+                  <h3 className="font-medium">{creation.name}</h3>
+                  <span className="text-sm text-neutral-400">
+                    {creation.status}
+                  </span>
+                </div>
+                <p className="text-neutral-400 text-sm mt-2">
+                  {creation.description}
+                </p>
+              </a>
+            ) : (
+              <div
+                key={creation.name}
+                className="p-4 rounded-lg border border-neutral-800 hover:bg-neutral-900 transition-all"
+              >
+                <div className="flex justify-between items-start">
+                  <h3 className="font-medium">{creation.name}</h3>
+                  <span className="text-sm text-neutral-400">
+                    {creation.status}
+                  </span>
+                </div>
+                <p className="text-neutral-400 text-sm mt-2">
+                  {creation.description}
+                </p>
               </div>
-              <p className="text-neutral-400 text-sm mt-2">
-                {creation.description}
-              </p>
-            </a>
+            )
           ))}
         </div>
       </div>
