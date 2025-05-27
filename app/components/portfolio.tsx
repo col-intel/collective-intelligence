@@ -101,9 +101,15 @@ export function Portfolio() {
   const creations = [
     {
       name: "steps.org",
-      description: "A walking game.",
-      url: "",
-      status: "TBA"
+      description: "Hit your daily steps, for good.",
+      url: "https://steps.org",
+      status: "2025"
+    },
+    {
+      name: "Poolside",
+      description: "The Club For Founders in Tech, Entertainment, & AI",
+      url: "https://www.poolside.co",
+      status: "2025"
     }
   ]
 
